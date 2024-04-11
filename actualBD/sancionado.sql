@@ -11,7 +11,7 @@
  Target Server Version : 80200 (8.2.0)
  File Encoding         : 65001
 
- Date: 10/04/2024 15:33:48
+ Date: 10/04/2024 18:40:13
 */
 
 SET NAMES utf8mb4;
@@ -216,7 +216,7 @@ CREATE TABLE `users` (
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE,
   UNIQUE KEY `users_email_unique` (`email`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
 -- Records of users
@@ -224,6 +224,11 @@ CREATE TABLE `users` (
 BEGIN;
 INSERT INTO `users` (`id`, `name`, `email`, `cargo`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES (5, 'ADMIN', 'admin@admin.com', 'Administrador', NULL, '$2y$10$6hrPn.HoY4bORmNSwWP1ueuj.yajqcVC0/62T4yP3kWHmjIG4.b9.', NULL, '2023-11-14 19:30:17', '2023-11-14 19:30:17');
 INSERT INTO `users` (`id`, `name`, `email`, `cargo`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES (7, 'Joaquin', 'admin.24@gmail.com', 'Administrador', NULL, '$2y$10$RpnTMl9uMo0joABCkbERSu9k4NFwWPrDOBE/28QUuTJBpQr1O.vEe', NULL, '2024-02-12 19:56:43', '2024-02-12 19:56:43');
+INSERT INTO `users` (`id`, `name`, `email`, `cargo`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES (8, 'UsuarioPrueba', 'usuarioprueba@gmail.com', 'Administrador', NULL, '$2y$10$dbhxpKxG1myw1ORI5okUZO/qDOfHF.IORGk0fl0WNFrZL0UZqktui', NULL, '2024-04-11 00:31:44', '2024-04-11 00:31:44');
+INSERT INTO `users` (`id`, `name`, `email`, `cargo`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES (10, 'Usuario1', 'usuario1@gmail.com', 'Super', NULL, '$2y$10$uPx01CQjVq4E3DR5J48ckuqgeeSuvX090H/M0E9bxIt2DbXpmGe9K', 'nexZupyWrHGbgogZM4zKI2kruXQvtz67CGfszewPuygp4Ci5EGirKEm7ZvCE', '2024-04-09 20:40:38', '2024-04-09 20:40:38');
+INSERT INTO `users` (`id`, `name`, `email`, `cargo`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES (11, 'Usuario2', 'usuario2@gmail.com', 'Administrador', NULL, '$2y$10$hoS3pC3hE0752MYCAfI53OTj.VcNMUwxsQfF0P2w/ViX8S2UtvjJC', 'Js9l84e8HxO3scBPrzSE4II36iAgiowli8918dfajXNTb83qjGNXo133JQGe', '2024-04-09 20:41:23', '2024-04-09 20:41:23');
+INSERT INTO `users` (`id`, `name`, `email`, `cargo`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES (12, 'Usuario3', 'usuario3@gmail.com', 'Capturista', NULL, '$2y$10$V1uXSmadGMOD1urb4hgyFObEjRbNttVfQKlTdZ3KnhOSrTelvUZW.', NULL, '2024-04-09 20:41:57', '2024-04-09 20:41:57');
+INSERT INTO `users` (`id`, `name`, `email`, `cargo`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES (13, 'Usuario4', 'usuario4@gmail.com', 'Consulta', NULL, '$2y$10$/xTueB4ussucG.rk7bB6euQ4NoKEQzrVxWUXajsx7f19TvTBNin42', NULL, '2024-04-09 20:42:30', '2024-04-09 20:42:30');
 COMMIT;
 
 SET FOREIGN_KEY_CHECKS = 1;
