@@ -1,4 +1,4 @@
-# proyectoSancionados local 
+# proyectoSancionados 
 sistema de servidores publicos sancionados
 
 Este proyecto es un sistema de gestión de sanciones diseñado para registrar, administrar y generar informes sobre personas sancionadas por diversas faltas administrativas.
